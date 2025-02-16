@@ -29,5 +29,9 @@ def create_data():
     df.loc[len(df.index), :] = new_data
     save_data(df)
 
+    new_data2 = {'Name': 'Alex', 'Age': 60, 'City': 'New York'}
+    df.loc[len(df.index), :] = new_data2
+    save_data(df)
+
 if __name__ == '__main__':
     create_data()
